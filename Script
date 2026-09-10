@@ -4343,7 +4343,7 @@ isAssetsReady = true
 local lmsDisabled = false
 local lmsData = { Names={"Custom"}, Data={} }
 if not lmsDisabled then
-    local apiData = HttpService:JSONDecode(game:HttpGet('https://api.github.com/repos/aibabylaugh/catsaken/contents/lms'))
+    local apiData = HttpService:JSONDecode(game:HttpGet('https://raw.githubusercontent.com/test1237423234-stack/MegaSaken/refs/heads/main/lms'))
     for _, file in ipairs(apiData) do
         pcall(function()
             local name = file.name:sub(1,-5)
