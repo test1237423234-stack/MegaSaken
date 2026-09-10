@@ -4114,12 +4114,12 @@ function Unload()
 end
 
 MiscTab:CreateButton{Name='Unload', Callback=Unload}
-MiscTab:CreateButton{Name='Reload', Callback=function() Unload() loadstring(game:HttpGet('https://raw.githubusercontent.com/aibabylaugh/catsaken-real-script-not-assets/refs/heads/main/obfuscated-1448974601077002340.lua'))() end}
+MiscTab:CreateButton{Name='Reload', Callback=function() Unload() loadstring(game:HttpGet('https://raw.githubusercontent.com/test1237423234-stack/MegaSaken/refs/heads/main/Script'))() end}
 MiscTab:CreateButton{Name=(isOldUI and 'Disable' or '') .. ' Old GUI', Callback=function()
     Unload()
     if isOldUI then delfile("BOOL_megasaken_OLDUI") else writefile("BOOL_megasaken_OLDUI","") end
     task.wait(1)
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/aibabylaugh/catsaken-real-script-not-assets/refs/heads/main/obfuscated-1448974601077002340.lua'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/test1237423234-stack/MegaSaken/refs/heads/main/Script'))()
 end}
 if not isOldUI then
     MiscTab:CreateToggle{Name='Mobile toggle', CurrentValue=true, Flag='MobileMenuToggle', Callback=function(v) GlobalEnv.MobileToggle:setEnabled(v) end}
