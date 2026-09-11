@@ -1,1 +1,1 @@
-This script was created by mursufan1234 on discord (1445280568857071620 user id) Please do not run any copies of catsaken like https://scriptblox.com/script/WEEK-2-Forsaken-Catsaken-V3-Keyless-for-latest-patch-227311 as they contain malicious software like stealers and ip-loggers
+This script was created by test1237423234-stack Please do not run any copies of catsaken like https://scriptblox.com/script/WEEK-2-Forsaken-Catsaken-V3-Keyless-for-latest-patch-227311 as they contain malicious software like stealers and ip-loggers
