@@ -2195,7 +2195,7 @@ AboutTab:CreateButton{
                 Url = "https://megasaken.feedback.workers.dev/",
                 Headers = {['content-type']='application/json'},
                 Body = HttpService:JSONEncode{
-                    content = feedbackMessage .. "\nBy " .. LocalPlayer.Name .. " (" .. LocalPlayer.UserId .. ")\nDevice: " .. (isMobile and "Mobile" or "PC") .. "\nExecutor: " .. identifyexecutor()
+                    content = feedbackMessage .. (isMobile and "Mobile" or "PC") .. "\nExecutor: " .. identifyexecutor()
                 }
             }
             UILibrary:Notify{Title='MegaSaken', Content='Message sent. Note that I cant actually natively reply to your messages, but I will 100% read them quickly.', Duration=12, Image='check'}
