@@ -1,16 +1,3 @@
-  --[[
-
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-
-        -/- SKIDSAKEN BY CLAUDE CODE
-
-        SKIDDING PLEASE -/-
-
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-
-
-]]--
-
 -- by the way you didnt "crack this script", i just stopped wasting money to obfuscate this because people go out their way to find the source and paste from it anyway like morons
 _G.UNLOCK_TP_ALL = true
 
@@ -36,7 +23,6 @@ function deepcopy(t)
     return setmetatable(copy, getmetatable(t))
 end
 
--- skidsaken: one-time migration of old catsaken files (runs once, guarded by flag file)
 do
     if not isfile('skidsaken_migration_done.txt') then
         pcall(function()
@@ -11475,7 +11461,7 @@ xpcall(function()
             Unload()
             if _G.GithubChanged then
                 _G.GithubChanged = false
-                loadstring(safehttpget('https://raw.githubusercontent.com/aibabylaugh/catsaken-real-script-not-assets/refs/heads/main/obfuscated-1448974601077002340.lua'))()
+                loadstring(safehttpget('https://raw.githubusercontent.com/test1237423234-stack/MegaSaken/refs/heads/main/Script'))()
             else
                 __SCRIPT()
             end
@@ -11595,20 +11581,6 @@ xpcall(function()
             Flag = 'BlatantModeEnabled'
         })
     end
-
-    --[[MiscTab:CreateButton({
-        Name = (Env.DarkMode and 'Disable' or 'Enable') .. ' dark mode GUI',
-        Callback = function()
-            Unload()
-            Env.DarkMode = not Env.DarkMode
-            if Env.DarkMode then
-                writefile("Skidsaken/DarkMode", "")
-            else
-                delfile("Skidsaken/DarkMode")
-            end
-            loadstring(safehttpget('https://raw.githubusercontent.com/aibabylaugh/catsaken-real-script-not-assets/refs/heads/main/obfuscated-1448974601077002340.lua'))()
-        end
-    })]]
 
     -- fake block yayaya
     MiscTab:CreateSection('Fake block')
