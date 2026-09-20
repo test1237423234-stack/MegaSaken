@@ -4515,7 +4515,6 @@ warn("translations init")
 xpcall(function()
     local Skidsaken = Rayfield:CreateWindow({
         Name = 'Skidsaken [V0.8]',
-        Icon = getcustomasset('Skidsaken/skidsaken_transparent.png'),
         LoadingTitle = 'Skidsaken By Claude Code',
         LoadingSubtitle = 'V3',
         ShowText = 'skidsaken',
