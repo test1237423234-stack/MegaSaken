@@ -4591,7 +4591,7 @@ xpcall(function()
     --AboutTab:CreateLabel('Skidsaken Remastered is a branch of Skidsaken. We don\'t use any code from skidsaken, we are an unofficial recontinuation of the popular script skidsaken. Skidsaken Remastered is FREE/KEYLESS and always will be. Developed on new year\'s eve by two developers who one also worked for Voidsaken.')
     AboutTab:CreateSection('Contact')
     AboutTab:CreateLabel("discord.gg/gAk7pm2RVy")
-    local servercreatedate = 1789618980
+    local servercreatedate = 1789318980
     local s, corddata = pcall(function()
         return safehttpget("https://discord.com/api/v6/invite/gAk7pm2RVy")
     end)
