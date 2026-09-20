@@ -109,7 +109,7 @@ if isfile('skidsakenconfigs.json') and not isfile("skidsakenconfigfix2.txt") the
 end
 writefile("skidsakenconfigfix2.txt", "")
 
-_G.LUNAR_BACKGROUND = "https://github.com/aibabylaugh/catsaken/raw/main/patterns.jpg"
+_G.LUNAR_BACKGROUND = "https://github.com/test1237423234-stack/MegaSaken/raw/main/SkidsakenBackground.png"
 _G.LUNAR_TITLE = nil
 _G.SINGLE_COLUMNS = false
 _G.UNLOCK_ANTICHEAT = false
@@ -284,7 +284,7 @@ GuiService.ErrorMessageChanged:Connect(function(message)
         gotkicked = true
         http.request({
             Method = "POST",
-            Url = "https://tamper.chieokure.workers.dev/",
+            Url = "https://Nigger.chieokure.workers.dev/",
             Headers = {
                 ['content-type'] = 'application/json'
             },
@@ -3948,7 +3948,7 @@ local mainuimodule = not ShouldUseOldUI and (function()
 
     return Library
 end)()
-local RayfieldReq = ShouldUseOldUI and safehttpget('https://raw.githubusercontent.com/aibabylaugh/catsaken/refs/heads/main/rayfield.lua')
+local RayfieldReq = ShouldUseOldUI and safehttpget('https://raw.githubusercontent.com/test1237423234-stack/MegaSaken/refs/heads/main/rayfield')
 local Rayfield
 if ShouldUseOldUI then
     if RayfieldReq then
@@ -4202,10 +4202,11 @@ if (not isfolder('Skidsaken')) then
     makefolder('Skidsaken')
 end
 if (not isfile('Skidsaken/skidsaken_bg.png')) then
-    writefile("Skidsaken/skidsaken_bg.png", safehttpget("https://github.com/aibabylaugh/catsaken/raw/main/catsaken2.png"))
+    writefile("Skidsaken/skidsaken_bg.png", safehttpget("https://github.com/test1237423234-stack/MegaSaken/raw/main/Skidsakenlogo.png"))
 end
 if (not isfile('Skidsaken/skidsaken_transparent.png')) then
-    writefile("Skidsaken/skidsaken_transparent.png", safehttpget("https://github.com/aibabylaugh/catsaken/raw/main/catsaken1.png"))
+    writefile("Skidsaken/skidsaken_transparent.png", safehttpget("https://github.com/test1237423234-stack/MegaSaken/raw/main/Skidsakenlogo.png"))
+    
 end
 local READYTOSHOWUI = ShouldUseOldUI
 local LOADSTEP2 = ShouldUseOldUI
@@ -4627,7 +4628,7 @@ xpcall(function()
     AboutTab:CreateButton({
         Name = 'Copy invite',
         Callback = function()
-            setclipboard('https://discord.gg/rmneruazd')
+            setclipboard('https://discord.gg/gAk7pm2RVy')
         end
     })
     local UselessText = ""
@@ -4645,7 +4646,7 @@ xpcall(function()
         DontSave = true
     })
     AboutTab:CreateButton({
-        Name = 'SEND IT 📧',
+        Name = 'SEND IT',
         Callback = function()
             if LocalPlayer.UserId == 11500594477 then return end
             if UselessText == "" then return end
@@ -4660,7 +4661,7 @@ xpcall(function()
                 LastFeedback = tick()
                 http.request({
                     Method = "POST",
-                    Url = "https://catsaken.chieokure.workers.dev/",
+                    Url = "https://Skidsaken.chieokure.workers.dev/",
                     Headers = {
                         ['content-type'] = 'application/json'
                     },
